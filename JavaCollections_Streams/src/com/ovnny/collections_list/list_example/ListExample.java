@@ -1,4 +1,4 @@
-package com.ovnny.list_example;
+package com.ovnny.collections_list.list_example;
 
 import java.util.ArrayList;
 import java.util.Collections;

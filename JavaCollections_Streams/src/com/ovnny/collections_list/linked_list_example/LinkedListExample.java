@@ -1,4 +1,4 @@
-package com.ovnny.linked_list_example;
+package com.ovnny.collections_list.list_example.linked_list_example;
 
 import java.util.Iterator;
 import java.util.LinkedList;
