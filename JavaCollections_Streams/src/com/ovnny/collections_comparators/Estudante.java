@@ -10,7 +10,7 @@ public class Estudante implements Comparable<Estudante> {
         this.idade = idade;
     }
 
-    public String getNome() { return nome; }
+    //public String getNome() { return nome; }
     public Integer getIdade() { return idade; }
 
     @Override
@@ -19,5 +19,8 @@ public class Estudante implements Comparable<Estudante> {
     @Override
     public int compareTo(Estudante o) {
         return this.getIdade() - o.getIdade();
+        //compareTo() recebe dois parâmetros sendo o primeiro
+        //o próprio objeto e segundo, um segundo objeto usado para
+        //a comparação.
     }
 }
