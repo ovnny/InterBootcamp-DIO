@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Implementa diversas formas da interface Comparator utilizando hora funções
- * Lambda, hora sintatic sugar
+ * Lambda, hora sintatic sugar.
  *
  */
 
