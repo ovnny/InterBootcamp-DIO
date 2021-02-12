@@ -99,6 +99,10 @@ por exemplo, e o campo dos valores serão os elementos dentro daquela coluna.
 HashMap + performático que o LinkedHashMap
 
 java.util.Comparator e java.util.Comparable
+Interface Funcional que permite utilização de sintaxe Lambda 
 Algoritmo de ordenação
 Define uma regra de negócios destinado à ordenação de uma coleção.
 Ordenação de objetos complexos criados pelo usuário
+Nos exercícios, utilizamos o Camparator e Camparable na classe util.List
+
+
