@@ -1,20 +1,30 @@
 package com.ovnny.desafiojavaavancado.desafio1;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.StringTokenizer;
-import java.util.stream.Collectors;
 
 public class StreamTest {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-    }
 
-    public List<String> tokensToStream(String srt) {
-        return Collections.list(new StringTokenizer(srt, " ")).stream()
-                .map(token -> (String)token)
-                .collect(Collectors.toList());
+        List<Words> wordsList = new ArrayList<>();
 
+        String text = "abcdef abc abc abc";
+
+        StringTokenizer st = new StringTokenizer(text, " ");
+        while(st.hasMoreElements()) {
+            Words word = new Words(st.nextToken());
+            wordsList.add(word);
+        }
+        wordsList.forEach(System.out::println);
     }
-} 
+    static class Words {
+        String name;
+        int savedWords;
+
+        Words(String name) {
+            this.name = name;
+            savedWords = this.name.length() - 2;
+        }
+    }
+}
