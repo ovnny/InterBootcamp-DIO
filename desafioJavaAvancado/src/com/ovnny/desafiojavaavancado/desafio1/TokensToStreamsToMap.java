@@ -1,10 +1,21 @@
 package com.ovnny.desafiojavaavancado.desafio1;
 
-import java.util.Collections;
-import java.util.Map;
-import java.util.StringTokenizer;
+import java.util.*;
+import java.util.function.BiPredicate;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+
+enum Abreviations {
+    ABREVIATION_COST(2), ALPHABETSIZE(26);
+    private final int value;
+
+    Abreviations(int value) {
+        this.value = value;
+    }
+    public int getValue() {
+        return value;
+    }
+}
 
 public class TokensToStreamsToMap {
 
@@ -17,21 +28,31 @@ public class TokensToStreamsToMap {
                 .map(token -> (String) token)
                 .filter(token -> token.length() > 2)
                 .collect(Collectors.toMap(Function.identity(), token ->
-                        (token.length() - AbreviationCost.ABREVIATION.getValue()), Integer::sum));
-
-        System.out.println(tokensCollisions);
+                        (token.length() - Abreviations.ABREVIATION_COST.getValue()), Integer::sum));
 
     }
 
-    public enum AbreviationCost {
-        ABREVIATION(2), ALPHABETLENGHT(26);
-        private final int value;
+    private static class Word {
+        String name;
+        Integer savedChars;
 
-        AbreviationCost(int value) {
-            this.value = value;
+        public Word(String name, Integer savedChars) {
+            this.name = name;
+            this.savedChars = savedChars;
         }
-        public int getValue() {
-            return value;
+
+        public String getName() {
+            return name;
         }
+
+        public Integer getSavedChars() {
+            return savedChars;
+        }
+
+        BiPredicate<Word, Word> savesMoreChars = (x, y) -> {
+            return y.startsWith != x.getName().charAt(0) &&
+                    y.getSavedChars() - x.getSavedChars() > 0;
+
+        };
     }
 }
