@@ -32,19 +32,11 @@ public class Solucao1 {
 
         Comparator<Word> sortWords = new CompareByNameAndSavedSpace();
         wordsList.sort(sortWords);
-        /** wordsList:
-         *
-         * [(name='abcdef', savedSpace=4), (name='abc', savedSpace=3),
-         *  (name='beef', savedSpace=8), (name='beeeeef', savedSpace=5),
-         *  (name='beeef', savedSpace=3), (name='cdcd', savedSpace=2),
-         *  (name='dado', savedSpace=4)]
-         */
+
         Set<String> hashIndexes = new HashSet<>();
 
         List<String> filteredWordList = wordsList.stream()
                 .map(w -> w.name).collect(Collectors.toList());
-
-        System.out.println("palavras: "+filteredWordList+ "\n");
 
         int nextAlphabetChar = (int)filteredWordList.get(0).charAt(0);
 
@@ -56,15 +48,56 @@ public class Solucao1 {
                 hashIndexes.add(word);
                 nextAlphabetChar++;
                 i.next();
-            }
-            else {
-                i.forEachRemaining(e ->
-                        hashIndexes.add(e.toString()));
+
+            } else { i.forEachRemaining(hashIndexes::add); }
+        }
+
+        List<String> textToCompress = Arrays.stream(text.split(" "))
+                .collect(Collectors.toList());
+
+        for (Iterator<String> it = hashIndexes.iterator(); it.hasNext();) {
+            WordCompresser<String> compresser = new WordCompresser();
+            if(textToCompress.contains(it.next())) {
+
             }
         }
-        System.out.println(hashIndexes);
+
+        WordCompresser<String> srt = new compress();
+
+
+
     }
 }
+class WordCompresser {
+    List<String> hashTabledWord;
+
+    public WordCompresser(List<String> hashTabledWord) {
+        this.hashTabledWord = hashTabledWord;
+    }
+    public String compress(List<String> txt) {
+        for (String w : txt)
+            if (hashTabledWord.contains(w)) {
+                return w.charAt(0) + ". ";
+            } else {
+                return w;
+            }
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+       if (o == hashTabledWord){
+           return true;
+       }
+       return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(hashTabledWord);
+    }
+}
+
 class CompareByNameAndSavedSpace implements Comparator<Word> {
     @Override
     public int compare(Word s1, Word s2) {
