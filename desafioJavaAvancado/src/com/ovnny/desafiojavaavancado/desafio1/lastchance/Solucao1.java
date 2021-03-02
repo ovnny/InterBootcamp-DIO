@@ -16,19 +16,24 @@ public class Solucao1 {
 
     public static void main(String[] args) {
 
-        String text = "abcdef abc abc abc beef beeef beeeeef beef beef beef cd cd cd cdcd dado dado dd dd";
+        String text =   "abcdef abc abc abc beef beeef beeeeef beef beef beef cd cd cd cdcd dado dado dd dd    dddob  jklmnopq   klind  quioiuer quioiuer quioiuer zzzzzzzzzzzzzz. jkkkkkkpp juninho    juninho     nhinhoju";
+
+        text = text.replaceAll("\\W", " ");
+        text = text.trim();
 
         Map<String, Integer> tokensCollisions = Collections.list(
                 new StringTokenizer(text, " ")).stream()
                 .map(token -> (String) token)
                 .filter(token -> token.length() > 2)
                 .collect(Collectors.toMap(Function.identity(), token ->
-                        (token.length() - TextData.ABREVIATION_COST.getValue()), Integer::sum));
+                        ((token.length() - TextData.ABREVIATION_COST.getValue())), Integer::sum));
 
         List<Word> wordsList = tokensCollisions.entrySet().stream()
                 .sorted(Map.Entry.comparingByKey(Comparator.naturalOrder()))
                 .map(k -> new Word(k.getKey(), k.getValue()))
                 .collect(Collectors.toList());
+
+        System.out.println("Esses são os valores de economia de cada palavra "+wordsList);
 
         Comparator<Word> sortWords = new CompareByNameAndSavedSpace();
         wordsList.sort(sortWords);
@@ -55,46 +60,50 @@ public class Solucao1 {
         List<String> textToCompress = Arrays.stream(text.split(" "))
                 .collect(Collectors.toList());
 
-        for (Iterator<String> it = hashIndexes.iterator(); it.hasNext();) {
-            WordCompresser<String> compresser = new WordCompresser();
-            if(textToCompress.contains(it.next())) {
+        TextCompresser compress = new TextCompresser(textToCompress, hashIndexes);
+        List<String> newText = compress.compress(textToCompress);
 
-            }
+        StringBuilder ultimateString = new StringBuilder();
+
+        for (String w: newText) {
+            ultimateString.append(w);
         }
+        String ultimateString2 = ultimateString.toString();
+        ultimateString2 = ultimateString2.trim();
 
-        WordCompresser<String> srt = new compress();
-
-
-
+    System.out.println("String Certa: "+ultimateString2);
+        System.out.println(hashIndexes.size());
+        hashIndexes.stream()
+                .sorted(Comparator.naturalOrder())
+                .forEach(w -> System.out.println(w.charAt(0)+". = "+w));
     }
 }
-class WordCompresser {
-    List<String> hashTabledWord;
 
-    public WordCompresser(List<String> hashTabledWord) {
-        this.hashTabledWord = hashTabledWord;
+class TextCompresser {
+    public List<String> text;
+    public Set<String> hashIndexes;
+
+    public TextCompresser(List<String> text, Set<String> hashIndexes) {
+        this.text = text;
+        this.hashIndexes = hashIndexes;
     }
-    public String compress(List<String> txt) {
-        for (String w : txt)
-            if (hashTabledWord.contains(w)) {
-                return w.charAt(0) + ". ";
-            } else {
-                return w;
+
+    public List<String> compress(List<String> text) {
+
+        List<String> newText = new ArrayList<>();
+        for (String word: text) {
+            if( hashIndexes.contains(word) ) {
+                word = word.charAt(0)+". ";
+                newText.add(word);
             }
-    }
-
-
-    @Override
-    public boolean equals(Object o) {
-       if (o == hashTabledWord){
-           return true;
-       }
-       return false;
+            else {newText.add(word+" ");}
+        }
+        return newText;
     }
 
     @Override
-    public int hashCode() {
-        return Objects.hash(hashTabledWord);
+    public String toString() {
+        return "hashIndexes.toString().charAt(0)" +". =" + hashIndexes;
     }
 }
 
