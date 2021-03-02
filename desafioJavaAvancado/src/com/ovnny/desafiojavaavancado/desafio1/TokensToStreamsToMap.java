@@ -45,14 +45,14 @@ public class TokensToStreamsToMap {
             return name;
         }
 
-        public Integer getSavedChars() {
+        private Integer getSavedChars() {
             return savedChars;
         }
 
-        BiPredicate<Word, Word> savesMoreChars = (x, y) -> {
-            return y.startsWith != x.getName().charAt(0) &&
-                    y.getSavedChars() - x.getSavedChars() > 0;
-
-        };
+//        BiPredicate<Word, Word> savesMoreChars = (x, y) -> {
+//            return y.startsWith != x.getName().charAt(0) &&
+//                    y.getSavedChars() - x.getSavedChars() > 0;
+//
+//        };
     }
 }

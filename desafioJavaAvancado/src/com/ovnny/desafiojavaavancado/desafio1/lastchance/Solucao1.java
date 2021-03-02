@@ -44,22 +44,22 @@ public class Solucao1 {
         List<String> filteredWordList = wordsList.stream()
                 .map(w -> w.name).collect(Collectors.toList());
 
-        System.out.println(filteredWordList+ "\n");
+        System.out.println("palavras: "+filteredWordList+ "\n");
+
+        int nextAlphabetChar = (int)filteredWordList.get(0).charAt(0);
 
         Iterator<String> i = filteredWordList.iterator();
         while(i.hasNext()) {
-            if (hashIndexes.isEmpty()) {
-                hashIndexes.add(i.next());
+            String word = i.next();
+
+            if ((int)word.charAt(0) == nextAlphabetChar) {
+                hashIndexes.add(word);
+                nextAlphabetChar++;
                 i.next();
             }
-            for (:
-                 ) {
-                
-            }
-            else if (i.next().charAt(0) == i.next().charAt(0) + 1) {
-                hashIndexes.add(i.next());
-            } else {
-                break;
+            else {
+                i.forEachRemaining(e ->
+                        hashIndexes.add(e.toString()));
             }
         }
         System.out.println(hashIndexes);
