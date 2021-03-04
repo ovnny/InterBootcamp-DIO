@@ -48,23 +48,22 @@ public class StringChallenge {
 
         int indexReference = (int)filteredWords.get(0).charAt(0) - 1;
         ListIterator<String> i = filteredWords.listIterator();
-
         while(i.hasNext()) {
             wordIndex.add(i.next());
-            i.next();
-            if(     (int)i.next().charAt(0) > (int)i.previous().charAt(0) ||
-                    (int)i.previous().charAt(0) <= (int)i.next().charAt(0)) {
+                    i.next();
+            if ((int) i.next().charAt(0) > (int) i.previous().charAt(0) ||
+                    (int) i.previous().charAt(0) <= (int) i.next().charAt(0)) {
                 wordIndex.add(i.next());
 
-            }
-            else if((int)i.next().charAt(0) == (int)i.previous().charAt(0) &&
-                    (int)i.next().charAt(0) == (int)i.next().charAt(0) &&
-                    (int)i.previous().charAt(0) == (int)i.previous().charAt(0))  {
+            } else if ((int) i.next().charAt(0) == (int) i.previous().charAt(0) ||
+                    (int) i.next().charAt(0) == (int) i.next().charAt(0) ||
+                    (int) i.previous().charAt(0) == (int) i.previous().charAt(0)) {
+                i.next();
                 wordIndex.add(i.previous());
                 i.next();
-                i.next();
+            } else {
+                i.set(i.next());
             }
-            else { i.next(); }
         }
 
         TextCompresser compress = new TextCompresser(text, wordIndex);
