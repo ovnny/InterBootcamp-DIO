@@ -20,10 +20,10 @@ public class StringChallenge {
         String[] listTokens = previousTokens.split(" ");
 
         // Push tokens to StringBuilder then sanitize it and collect it to List<String>
-        List<String> text =  Arrays.stream(listTokens)
+        List<String> text = Arrays.stream(listTokens)
                 .map(t -> new StringBuilder().append(t).toString())
-                .map(t -> t.replaceAll("\\W",""))
-                .map(t -> t.replaceAll("[.]", "" ))
+                .map(t -> t.replaceAll("\\W", ""))
+                .map(t -> t.replaceAll("[.]", ""))
                 .filter(t -> t.length() > 1)
                 .collect(Collectors.toList());
 
@@ -46,13 +46,17 @@ public class StringChallenge {
         // Building the hashtable's words
         Set<String> wordIndex = new HashSet<>();
 
-        int indexReference = (int)filteredWords.get(0).charAt(0) - 1;
-        ListIterator<String> i = filteredWords.listIterator();
-        while(i.hasNext()) {
-            wordIndex.add(i.next());
-                    i.next();
+        /*  TENTANDO UMA OUTRA ABORDAGEM:
+            PROJETO: FINDER
+              Classe que une duas estruturas de dados diferentes e um iterador observer
+              que observa o gatilho que será baseado nos valores ASCII do alfabeto "toLower()"
+              r"/[a-z*]" --> engatilhado por um "findfirst()" e um loop que ira iterar de
+              n até n + AlPHABET_LENGHT pra cada procura na lista
+          */
 
-        }
+
+
+
 
         TextCompresser compress = new TextCompresser(text, wordIndex);
         List<String> compressedText = compress.compressText(text);
