@@ -51,19 +51,7 @@ public class StringChallenge {
         while(i.hasNext()) {
             wordIndex.add(i.next());
                     i.next();
-            if ((int) i.next().charAt(0) > (int) i.previous().charAt(0) ||
-                    (int) i.previous().charAt(0) <= (int) i.next().charAt(0)) {
-                wordIndex.add(i.next());
 
-            } else if ((int) i.next().charAt(0) == (int) i.previous().charAt(0) ||
-                    (int) i.next().charAt(0) == (int) i.next().charAt(0) ||
-                    (int) i.previous().charAt(0) == (int) i.previous().charAt(0)) {
-                i.next();
-                wordIndex.add(i.previous());
-                i.next();
-            } else {
-                i.set(i.next());
-            }
         }
 
         TextCompresser compress = new TextCompresser(text, wordIndex);
