@@ -37,30 +37,92 @@ public class StringChallenge {
                 .map(m -> new Word(m.getKey(), m.getValue()))
                 .collect(Collectors.toList());
 
-        Comparator<Word> byPotententialCompression = new CompareByKeyAndValue();
-        wordsList.sort(byPotententialCompression);
+        Comparator<Word> byPotentialCompression = new CompareByKeyAndValue();
+        wordsList.sort(byPotentialCompression);
 
+        List<String> filteredWords = wordsList.stream()
+                .map(f -> f.name).collect(Collectors.toList());
 
+        // Building the hashtable's words
+        Set<String> wordIndex = new HashSet<>();
 
+        int indexReference = (int)filteredWords.get(0).charAt(0) - 1;
+        ListIterator<String> i = filteredWords.listIterator();
 
+        while(i.hasNext()) {
+            wordIndex.add(i.next());
+            i.next();
+            if(     (int)i.next().charAt(0) > (int)i.previous().charAt(0) ||
+                    (int)i.previous().charAt(0) <= (int)i.next().charAt(0)) {
+                wordIndex.add(i.next());
 
+            }
+            else if((int)i.next().charAt(0) == (int)i.previous().charAt(0) &&
+                    (int)i.next().charAt(0) == (int)i.next().charAt(0) &&
+                    (int)i.previous().charAt(0) == (int)i.previous().charAt(0))  {
+                wordIndex.add(i.previous());
+                i.next();
+                i.next();
+            }
+            else { i.next(); }
+        }
 
+        TextCompresser compress = new TextCompresser(text, wordIndex);
+        List<String> compressedText = compress.compressText(text);
+
+        for (String w: compressedText) {
+            System.out.print(w +" ");
+        }
+        System.out.println();
+        System.out.println(wordIndex.size());
+        wordIndex.stream()
+                .sorted(Comparator.naturalOrder())
+                .forEach(w -> System.out.println(w.charAt(0)+". = " + w));
+    }
+}
+
+class TextCompresser {
+    public List<String> text;
+    public Set<String> hashIndexes;
+
+    public TextCompresser(List<String> text, Set<String> hashIndexes) {
+        this.text = text;
+        this.hashIndexes = hashIndexes;
+    }
+
+    public List<String> compressText(List<String> text) {
+        List<String> newText = new ArrayList<>();
+        for (String word: text) {
+            if( hashIndexes.contains(word) ) {
+                word = word.charAt(0)+". ";
+                newText.add(word);
+            }
+            else {newText.add(word);}
+        }
+        return newText;
+    }
+    @Override
+    public String toString() {
+        return "hashIndexes.toString().charAt(0)" +". =" + hashIndexes;
     }
 }
 
 class CompareByKeyAndValue implements Comparator<Word> {
     @Override
     public int compare(Word s1, Word s2) {
-        if(     (int)s1.name.charAt(0) == (int)s2.name.charAt(0) &&
+        if(     (int)s1.name.charAt(0) < (int)s2.name.charAt(0) &&
                 s1.savedSpace > s2.savedSpace ||
-                (int)s1.name.charAt(0) < (int)s2.name.charAt(0) &&
-                s1.savedSpace > s2.savedSpace ) {
+                (int)s1.name.charAt(0) == (int)s2.name.charAt(0) &&
+                s1.savedSpace >= s2.savedSpace) {
             return -1;
         }
-        else if ((int)s1.name.charAt(0) < (int)s2.name.charAt(0) &&
-                s1.savedSpace <= s2.savedSpace ) {
+        else if (   (int)s1.name.charAt(0) > (int) s2.name.charAt(0) &&
+                    s1.savedSpace < s2.savedSpace  ||
+                    (int)s1.name.charAt(0) == (int) s2.name.charAt(0) &&
+                    s2.savedSpace <= s1.savedSpace ){
             return 1;
-        }   else { return 0; }
+
+        } else { return 0; }
     }
 }
 
