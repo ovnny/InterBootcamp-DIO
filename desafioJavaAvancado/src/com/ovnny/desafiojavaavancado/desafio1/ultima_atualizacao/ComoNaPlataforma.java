@@ -1,4 +1,4 @@
-package com.ovnny.desafiojavaavancado.desafio1.ultima_atualizacao.;
+package com.ovnny.desafiojavaavancado.desafio1.ultima_atualizacao;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,8 +12,14 @@ enum TextMetadata {
     COMPRESSED_WORD_LENGTH(2);
 
     private final int value;
-    TextMetadata(int value) { this.value = value; }
-    public int getValue() { return value; }
+
+    TextMetadata(int value) {
+        this.value = value;
+    }
+
+    public int getValue() {
+        return value;
+    }
 }
 
 public class ComoNaPlataforma {
@@ -21,16 +27,16 @@ public class ComoNaPlataforma {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        while(true) {
+        while (true) {
 
             String text = br.readLine();
             text.trim()
-                .toLowerCase()
-                .replaceAll("\t", " ")
-                .replaceAll("\n", " ");
+                    .toLowerCase()
+                    .replaceAll("\t", " ")
+                    .replaceAll("\n", " ");
 
-            if(text.equals(".")) break;
-            if(text.length() <= 0) continue;
+            if (text.equals(".")) break;
+            if (text.length() <= 0) continue;
 
             List<String> sanitizedText = new ArrayList(Arrays.asList(text.split(" ")));
 
@@ -61,15 +67,19 @@ public class ComoNaPlataforma {
                     for (int j = 0; j < wordsList.size(); j++) {
                         if (wordsList.get(j).name.charAt(0) == wordsIndexes.get(i)) {
                             chosedWords.add(wordsList.get(j).name);
-                            i++ ; }}}
-            } else { chosedWords.add(wordsList.get(0).name);  }
+                            i++; } } }
+            }
+            else  { chosedWords.add(wordsList.get(0).name); }
 
+            // Se não houver palavras maiores que 2, somente imprimir o texto.
+            // ERRO ENCONTRADO!!!!!
 
             TextCompresser compress = new TextCompresser(sanitizedText, chosedWords);
             List<String> compressedText = compress.compressText(sanitizedText);
 
             for (String w : compressedText) {
-                System.out.print(w + " "); }
+                System.out.print(w + " ");
+            }
             System.out.println();
             System.out.println(chosedWords.size());
             chosedWords.stream()
@@ -90,17 +100,18 @@ class TextCompresser {
 
     public List<String> compressText(List<String> text) {
         List<String> newText = new ArrayList<>();
-        for (String word: text) {
-            if( hashIndexes.contains(word) ) {
-                word = word.charAt(0)+". ";
+        for (String word : text) {
+            if (hashIndexes.contains(word)) {
+                word = word.charAt(0) + ". ";
             }
             newText.add(word);
         }
         return newText;
     }
+
     @Override
     public String toString() {
-        return "hashIndexes.toString().charAt(0)" +". =" + hashIndexes;
+        return "hashIndexes.toString().charAt(0)" + ". =" + hashIndexes;
     }
 }
 
@@ -112,11 +123,13 @@ class CompareByKeyAndValue implements Comparator<Word> {
         int v1 = s1.savedSpace;
         int v2 = s2.savedSpace;
 
-        if( (w2 > w1 & v1 > v2) | (w1 == w2 && v2 <= v1 )  ) {
-            return -1; }
-
-        else if(v1 > v2 & w2 < w1) {
-            return 1; } else {  return 0 ;}
+        if ((w2 > w1 & v1 > v2) | (w1 == w2 && v2 <= v1)) {
+            return -1;
+        } else if (v1 > v2 & w2 < w1) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }
 
