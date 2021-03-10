@@ -1,5 +1,6 @@
 package com.ovnny.desafiojavaavancado.desafio1.stringchallengeII;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -18,89 +19,90 @@ public class StringChallengeII {
 
     public static void main(String[] args) {
         // Simulating Dio Platform
-        String previousTokens = "abcdef abcdef aaaa bbbb cccc";
+        String previousTokens = "abcdef abc abc abc";
 
         String[] listTokens = previousTokens.split(" ");
 
         // Real Beginning: Push tokens to StringBuilder then sanitize then and collect it to List<String>
-        List<String> text = Arrays.stream(listTokens)
-                .map(t -> new StringBuilder().append(t).toString())
-                .map(t -> t.replaceAll("\\W", ""))
-                .map(t -> t.replaceAll("[.]", ""))
-                .filter(t -> t.length() >= 1)
-                .collect(Collectors.toList());
+        while(true) {
+            List<String> text = Arrays.stream(listTokens)
+                    .map(t -> new StringBuilder().append(t).toString())
+                    .map(t -> t.replaceAll("\\W", ""))
+                    .map(t -> t.replaceAll("[.]", ""))
+                    .filter(t -> t.length() >= 1)
+                    .collect(Collectors.toList());
+
+            Map<String, Integer> wordCollisions = text.stream()
+                    .filter(t -> t.length() > 2)
+                    .collect(Collectors.toMap(Function.identity(), t ->
+                            (t.length() - TextMetadata.COMPRESSED_WORD_LENGTH.getValue()), Integer::sum));
+
+            // Instantiate new Word objects
+            List<Word> wordsList = wordCollisions.entrySet().stream()
+                    .sorted(Map.Entry.comparingByKey(Comparator.naturalOrder()))
+                    .map(m -> new Word(m.getKey(), m.getValue()))
+                    .collect(Collectors.toList());
+
+            // Word extends ComparingByKeyAndValue class who implements the Comparator class and overyde their method
+            // Object byPotentialCompression sort the words in reverse order, bringing the words with bigger occurrences
+            // and more char to compress to front the others
+            Comparator<Word> byPotentialCompression = new CompareByKeyAndValue();
+            wordsList.sort(byPotentialCompression);
+
+            // Lists different firsts possible chars within the text to use as refference latter
+            List<Character> wordsIndexes = wordsList.stream()
+                    .map(w -> w.name.charAt(0)).distinct()
+                    .collect(Collectors.toList());
+
+            // Building the hashtable's of words to seek and compress latter
+            Set<String> chosedWords = new HashSet<>();
 
 
+            // This bad boy uses the list of possible chars as an anchor to iterate over
+            // the sorted list of words. If the list have three words, it will be iterated  3 times
+            // and so on. As the list was sorted by natural order and potential of compression at glance,
+            // each first occurrence will be, naturally, the better choice and so on, when
+            // the word is founded we increment the anchor by one to the next possible char of the list.
+            // Than, push then to the chosedWord's Set
 
-        // Throws List of Strings into dictionary. The key is the word properly said and the keys
-        // are the amount of words that will bem saved by compression
-        Map<String, Integer> wordCollisions = text.stream()
-                .filter(t -> t.length() > 2)
-                .collect(Collectors.toMap(Function.identity(), t ->
-                        (t.length() - TextMetadata.COMPRESSED_WORD_LENGTH.getValue()), Integer::sum));
-
-        // Instantiate new Word objects
-        List<Word> wordsList = wordCollisions.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey(Comparator.naturalOrder()))
-                .map(m -> new Word(m.getKey(), m.getValue()))
-                .collect(Collectors.toList());
-
-        // Word extends ComparingByKeyAndValue class who implements the Comparator class and overyde their method
-        // Object byPotentialCompression sort the words in reverse order, bringing the words with bigger occurrences
-        // and more char to compress to front the others
-        Comparator<Word> byPotentialCompression = new CompareByKeyAndValue();
-        wordsList.sort(byPotentialCompression);
-
-        // Lists different firsts possible chars within the text to use as refference latter
-        List<Character> wordsIndexes = wordsList.stream()
-                .map(w -> w.name.charAt(0)).distinct()
-                .collect(Collectors.toList());
-
-        // Building the hashtable's of words to seek and compress latter
-        Set<String> chosedWords = new HashSet<>();
-
-
-        // This bad boy uses the list of possible chars as an anchor to iterate over
-        // the sorted list of words. If the list have three words, it will be iterated  3 times
-        // and so on. As the list was sorted by natural order and potential of compressionat glance,
-        // each first occurrence will be, naturally, the better choice and so on, when
-        // the word is founded we increment the anchor by one to the next possible char of the list.
-        // Than, push then to the chosedWord's Set
-
-        for (int i = 0; i < wordsIndexes.size(); i++) {
-            for (int j = 0; j < wordsList.size(); j++ ) {
-                if (wordsIndexes.get(i) == wordsList.get(j).name.charAt(0) & wordsList.size() > 2) {
-                    chosedWords.add(wordsList.get(j).name);
-                    i++;
-
-                } else { if (wordsList.size() <= 2 &&
-                            wordsList.get(j).name.charAt(0) == wordsList.get(j+1).name.charAt(0)) {
+            if (wordsIndexes.size() > 1) {
+                for (int i = 0; i < wordsIndexes.size(); i++) {
+                    for (int j = 0; j < wordsList.size(); j++) {
+                        if (wordsIndexes.get(i) == wordsList.get(j).name.charAt(0)) {
                             chosedWords.add(wordsList.get(j).name);
-                            break;
+                            i++;
+
+                        }
                     }
                 }
+            } else {
+                chosedWords.add(wordsList.get(0).name);
             }
+
+
+            // Iterate through the initial stream of strings and hash every word
+            // if any matches with the Set, we compress it
+
+            TextCompresser compress = new TextCompresser(text, chosedWords);
+            List<String> compressedText = compress.compressText(text);
+
+            // printing the result as requested on the problem set
+            for (String w : compressedText) {
+                System.out.print(w + " ");
+            }
+            System.out.println();
+            System.out.println(chosedWords.size());
+            chosedWords.stream()
+                    .sorted(Comparator.naturalOrder())
+                    .forEach(w -> System.out.println(w.charAt(0) + ". = " + w));
+
+            wordsIndexes.clear();
+            chosedWords.clear();
+            wordsList.clear();
         }
-
-        // Iterate through the initial stream of strings and hash every word
-        // if any matches with the Set, we compress it
-
-        TextCompresser compress = new TextCompresser(text, chosedWords);
-        List<String> compressedText = compress.compressText(text);
-
-        // printing the result as requested on the problem set
-        for (String w: compressedText) {
-            System.out.print(w +" ");
-        }
-        System.out.println();
-        System.out.println(chosedWords.size());
-        chosedWords.stream()
-                .sorted(Comparator.naturalOrder())
-                .forEach(w -> System.out.println(w.charAt(0)+". = " + w));
     }
 }
 // Below, the helpers: formaters, classes and methods
-
 
 class TextCompresser {
     public List<String> text;
