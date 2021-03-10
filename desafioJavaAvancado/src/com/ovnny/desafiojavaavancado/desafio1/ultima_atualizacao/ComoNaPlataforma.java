@@ -10,12 +10,8 @@ import java.util.stream.Collectors;
 // Value of word compression since each compressed word has shape "w.". A char and a period.
 enum TextMetadata {
     COMPRESSED_WORD_LENGTH(2);
-
     private final int value;
-
-    TextMetadata(int value) {
-        this.value = value;
-    }
+    TextMetadata(int value) { this.value = value; }
 
     public int getValue() {
         return value;
@@ -30,10 +26,7 @@ public class ComoNaPlataforma {
         while (true) {
 
             String text = br.readLine();
-            text.trim()
-                    .toLowerCase()
-                    .replaceAll("\t", " ")
-                    .replaceAll("\n", " ");
+            text.trim().toLowerCase().replaceAll("\t", " ");
 
             if (text.equals(".")) break;
             if (text.length() <= 0) continue;
@@ -48,43 +41,51 @@ public class ComoNaPlataforma {
                             (t.length() - TextMetadata.COMPRESSED_WORD_LENGTH.getValue()), Integer::sum));
 
             // Instantiate new Word objects
-            List<Word> wordsList = wordCollisions.entrySet().stream()
-                    .sorted(Map.Entry.comparingByKey(Comparator.naturalOrder()))
-                    .map(m -> new Word(m.getKey(), m.getValue()))
-                    .collect(Collectors.toList());
+            if (wordCollisions.size() > 0) {
+                List<Word> wordsList = wordCollisions.entrySet().stream()
+                        .sorted(Map.Entry.comparingByKey(Comparator.naturalOrder()))
+                        .map(m -> new Word(m.getKey(), m.getValue()))
+                        .collect(Collectors.toList());
 
-            Comparator<Word> byPotentialCompression = new CompareByKeyAndValue();
-            wordsList.sort(byPotentialCompression);
+                Comparator<Word> byPotentialCompression = new CompareByKeyAndValue();
+                wordsList.sort(byPotentialCompression);
 
-            List<Character> wordsIndexes = wordsList.stream()
-                    .map(w -> w.name.charAt(0)).distinct()
-                    .collect(Collectors.toList());
+                List<Character> wordsIndexes = wordsList.stream()
+                        .map(w -> w.name.charAt(0)).distinct()
+                        .collect(Collectors.toList());
 
-            Set<String> chosedWords = new HashSet<>();
+                Set<String> chosedWords = new HashSet<>();
 
-            if (wordsIndexes.size() >= 2) {
-                for (int i = 0; i < wordsIndexes.size(); i++) {
-                    for (int j = 0; j < wordsList.size(); j++) {
-                        if (wordsList.get(j).name.charAt(0) == wordsIndexes.get(i)) {
-                            chosedWords.add(wordsList.get(j).name);
-                            i++; } } }
-            }
-            else  { chosedWords.add(wordsList.get(0).name); }
+                if (wordsIndexes.size() >= 2) {
+                    for (int i = 0; i < wordsIndexes.size(); i++) {
+                        for (int j = 0; j < wordsList.size(); j++) {
+                            if (wordsList.get(j).name.charAt(0) == wordsIndexes.get(i)) {
+                                chosedWords.add(wordsList.get(j).name);
+                                i++;
+                            }
+                        }
+                    }
+                } else {
+                    chosedWords.add(wordsList.get(0).name);
+                }
 
-            // Se não houver palavras maiores que 2, somente imprimir o texto.
-            // ERRO ENCONTRADO!!!!!
+                // Se não houver palavras maiores que 2, somente imprimir o texto.
+                // ERRO ENCONTRADO!!!!!
 
-            TextCompresser compress = new TextCompresser(sanitizedText, chosedWords);
-            List<String> compressedText = compress.compressText(sanitizedText);
+                TextCompresser compress = new TextCompresser(sanitizedText, chosedWords);
+                List<String> compressedText = compress.compressText(sanitizedText);
 
-            for (String w : compressedText) {
-                System.out.print(w + " ");
-            }
-            System.out.println();
-            System.out.println(chosedWords.size());
-            chosedWords.stream()
-                    .sorted(Comparator.naturalOrder())
-                    .forEach(w -> System.out.println(w.charAt(0) + ". = " + w));
+                for (String w : compressedText) {
+                    System.out.print(w + " ");
+                }
+                System.out.println();
+                System.out.println(chosedWords.size());
+                chosedWords.stream()
+                        .sorted(Comparator.naturalOrder())
+                        .forEach(w -> System.out.println(w.charAt(0) + ". = " + w));
+
+            } else { sanitizedText.forEach(w -> System.out.print(w+" "));
+                     System.out.println(); }
         }
     }
 }
