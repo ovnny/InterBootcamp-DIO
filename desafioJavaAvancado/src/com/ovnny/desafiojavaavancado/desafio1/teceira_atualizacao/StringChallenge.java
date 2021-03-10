@@ -1,4 +1,4 @@
-package com.ovnny.desafiojavaavancado.desafio1.stringchallenge;
+package com.ovnny.desafiojavaavancado.desafio1.teceira_atualizacao;
 
 import java.util.*;
 import java.util.function.Function;

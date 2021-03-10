@@ -1,4 +1,4 @@
-package com.ovnny.desafiojavaavancado.desafio1.lastchance;
+package com.ovnny.desafiojavaavancado.desafio1.segunda_atualizacao;
 
 import java.util.*;
 import java.util.function.Function;

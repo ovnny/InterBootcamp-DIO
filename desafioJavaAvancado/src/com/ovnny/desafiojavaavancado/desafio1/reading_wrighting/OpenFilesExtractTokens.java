@@ -1,4 +1,4 @@
-package com.ovnny.desafiojavaavancado.desafio1;
+package com.ovnny.desafiojavaavancado.desafio1.reading_wrighting;
 
 import java.io.*;
 

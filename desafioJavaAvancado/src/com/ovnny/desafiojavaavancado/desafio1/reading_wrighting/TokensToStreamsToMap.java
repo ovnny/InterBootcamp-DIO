@@ -1,7 +1,6 @@
-package com.ovnny.desafiojavaavancado.desafio1;
+package com.ovnny.desafiojavaavancado.desafio1.reading_wrighting;
 
 import java.util.*;
-import java.util.function.BiPredicate;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
