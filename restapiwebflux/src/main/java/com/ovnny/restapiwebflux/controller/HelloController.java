@@ -1,7 +1,13 @@
-package com.ovnny.restapiwebflux.hellovinny;
+package com.ovnny.restapiwebflux.controller;
 
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloController {
+
+    @GetMapping("/")
+    public String helloMessage() {
+        return "Hello World!!";
     }
 }
