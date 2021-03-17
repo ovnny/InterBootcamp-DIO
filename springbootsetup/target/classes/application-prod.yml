@@ -1,0 +1,11 @@
+#PROD ENVIRONMENT
+
+app:
+  message: This is the property file for the ${spring.application.name} specific to PROD Environment
+
+  spring:
+    datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: <MYSQL_URL>
+      username: <USERNAME>
+      password: <PASSWORD>
