@@ -5,268 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de671cbc-1ebd-4e49-bad1-9ac726e1be74" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/JDKStudies/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCollections_Streams/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/baseknowledge.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseknowledge/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.ovnny.test/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.ovnny.test/target/classes/com/test/Calculator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.ovnny.test/target/test-classes/com/test/AssertTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/com.ovnny.test/target/test-classes/com/test/CalculatorTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/quarta_atualizacao/CompareByKeyAndValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/quarta_atualizacao/StringChallengeII.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/quarta_atualizacao/TextCompresser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/quarta_atualizacao/TextMetadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/quarta_atualizacao/Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/Abreviations.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/OpenFilesExtractTokens.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/Solucao1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/Solucao2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/TextData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/TokensToStreams$Words.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/TokensToStreams.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/TokensToStreamsToMap$Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/TokensToStreamsToMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/reading_wrighting/Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/segunda_atualizacao/CompareByNameAndSavedSpace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/segunda_atualizacao/Solucao1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/segunda_atualizacao/TextCompresser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/segunda_atualizacao/TextData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/segunda_atualizacao/Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/teceira_atualizacao/CompareByKeyAndValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/teceira_atualizacao/StringChallenge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/teceira_atualizacao/TextCompresser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/teceira_atualizacao/TextMetadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/teceira_atualizacao/Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/ultima_atualizacao/ComoNaPlataforma.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/ultima_atualizacao/CompareByKeyAndValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/ultima_atualizacao/TextCompresser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/ultima_atualizacao/TextMetadata.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desafioJavaAvancado/out/production/JavaAvancado_desafio/com/ovnny/desafiojavaavancado/desafio1/ultima_atualizacao/Word.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaModular/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/target/classes/functionalinterface/_Consumer$Costumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/target/classes/functionalinterface/_Consumer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/target/classes/functionalinterface/_Function.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/target/classes/imperative/Main$Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/target/classes/imperative/Main$Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafunctional/target/classes/imperative/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_projectlombok_lombok_1_18_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_aop_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_beans_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_context_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_core_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_expression_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_test_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_web_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/restapiwebflux.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/classes/com/ovnny/restapiwebflux/RestapiwebfluxApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/classes/com/ovnny/restapiwebflux/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT.war.original" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/classes/com/ovnny/restapiwebflux/RestapiwebfluxApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/classes/com/ovnny/restapiwebflux/controller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jakarta.el-3.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-api-2.13.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.13.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/snakeyaml-1.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-9.0.43.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/restapiwebflux-0.0.1-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-9.0.43.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/surefire-reports/TEST-com.ovnny.restapiwebflux.RestapiwebfluxApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/surefire-reports/com.ovnny.restapiwebflux.RestapiwebfluxApplicationTests.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/restapiwebflux/target/test-classes/com/ovnny/restapiwebflux/RestapiwebfluxApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_11_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_2_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_10_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_13_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_43.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_assertj_assertj_core_3_18_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_glassfish_jakarta_el_3_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_7_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_mockito_mockito_core_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_3_6_28.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_objenesis_objenesis_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_projectlombok_lombok_1_18_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_4_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_aop_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_beans_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_context_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_core_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_expression_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_test_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_web_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/libraries/Maven__org_yaml_snakeyaml_1_27.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/springbootsetup.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/application-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/application-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/com/ovnny/springbootsetup/SpringbootConfigApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/com/ovnny/springbootsetup/config/DBConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/classes/com/ovnny/springbootsetup/controller/AppController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springbootsetup/target/test-classes/com/ovnny/springbootsetup/SpringbootConfigApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/teste21/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,9 +29,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="SDK Location" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.21328671" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -316,5 +57,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java_avancado_desafio/com/ovnny/desafio1/ultima_atualizacao/ComoNaPlataforma.class</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
